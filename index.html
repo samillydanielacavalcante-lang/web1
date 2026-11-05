@@ -1,25 +1,103 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <style>
+        * {
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+}
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    color: #333;
+}
+header {
+    background-color: #222;
+    color:white;
+    text-align: center;
+    padding: 25px;
+}
+nav {
+    background-color: #444;
+    padding: 10px;
+    text-align: center;
+}
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+}
+nav a:hover {    
+    color:#00bcd4;
+}
+.container {
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+    min-height: 400px;
+}
+aside {
+    width: 25%;
+    background-color: #ddd;
+    padding: 20px;
+    border-radius: 5px;
+}
+main {
+    flex: 1;
+    background-color:antiquewhite;
+    padding: 20px;
+    border-radius: 5px;
+}
+footer {
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 20px;
+}
+@media (max-width: 600px) {
+    .container {
+        flex-direction: column;
+    }
+    aside {
+        width: 100%;
+    }
+    nav a {
+        display: inline-block;
+        margin: 5px;
+    }
+}
+    </style>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <a href="contate-nos.html">Contato</a>
-    <a href="parceiros.html">Parceiros</a>
-    <a href="portfolio.html">Portfólio</a>
-    <a href="produtos.html">Produtos</a>
-    <a href="serviços.html">Serviços</a>
-    <a href="sobre.html">Sobre</a>
-</body>
-</html>
-<h1>Nexus Inovação Digital - Transformando Oportunidades em Tecnologia</h1>
-<h2>Bem-vindo à Era da Eficiência Digital</h2>
-<p>Na Nexus Inovação Digital, desenvolvemos soluções corporativas inteligentes, eficientes e altamente escaláveis para impulsionar o crescimento sustentável do seu negócio no ambiente digital.<br>Nossa missão é aproximar marcas e clientes por meio de engenharia de software de ponta, design funcional e estratégias focadas em alta performance e segurança de dados.</p>
+    <header>
+        <h1>Nexus Inovação Digital</h1>
+    </header>
+<nav>
+        <a href="contate-nos.html">Contato</a>
+        <a href="parceiros.html">Parceiros</a>
+        <a href="portfolio.html">Portfólio</a>
+        <a href="produtos.html">Produtos</a>
+        <a href="serviços.html">Serviços</a>
+        <a href="sobre.html">Sobre</a>
+</nav>
 
-<h2>Por que Escolher a Nexus?</h2>
-<p>Contamos com uma equipe multidisciplinar altamente qualificada para entregar projetos sob medida, garantindo máxima segurança, otimização de processos e diferenciação competitiva no mercado.<br>Transformamos desafios operacionais e analíticos em soluções digitais simples, intuitivas e de alto impacto para o seu dia a dia.</p>
-
-<h2>Transformação Digital ao Seu Alcance</h2>
-<p>Seja para automatizar rotinas operacionais, proteger dados críticos ou escalar o atendimento ao cliente, nossas plataformas foram construídas com tecnologia de última geração.<br>Unimos inovação contínua, arquitetura em nuvem e suporte dedicado para que sua empresa nunca pare de crescer.</p>
+<div class="container">
+    <aside>
+  
+    <h2>Bem-vindo à Era da Eficiência Digital</h2>
+    
+    </aside>
+    <main>
+<h1>Nexus Inovação Digital - Transformando Oportunidades em Tecnologia
+</h1>Na Nexus Inovação Digital, desenvolvemos soluções corporativas inteligentes, eficientes e altamente escaláveis para impulsionar o crescimento sustentável do seu negócio no ambiente digital.<br>Nossa missão é aproximar marcas e clientes por meio de engenharia de software de ponta, design funcional e estratégias focadas em alta performance e segurança de dados.</p>
+    </main>
+</div>
+        <p>&copy; 2026 Nexus Inovação Digital. Todos os direitos reservados.</p>
+    </footer>
