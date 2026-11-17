@@ -1,75 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <style>
-        * {
-    margin: 0;
-    padding: 0;
-    box-sizing:border-box;
-}
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f2f2f2;
-    color: #333;
-}
-header {
-    background-color: #222;
-    color:white;
-    text-align: center;
-    padding: 25px;
-}
-nav {
-    background-color: #444;
-    padding: 10px;
-    text-align: center;
-}
-nav a {
-    color: white;
-    text-decoration: none;
-    margin: 0 15px;
-    font-weight: bold;
-}
-nav a:hover {    
-    color:#00bcd4;
-}
-.container {
-    display: flex;
-    gap: 20px;
-    padding: 20px;
-    min-height: 400px;
-}
-aside {
-    width: 25%;
-    background-color: #ddd;
-    padding: 20px;
-    border-radius: 5px;
-}
-main {
-    flex: 1;
-    background-color:antiquewhite;
-    padding: 20px;
-    border-radius: 5px;
-}
-footer {
-    background-color: #222;
-    color: white;
-    text-align: center;
-    padding: 20px;
-    margin-top: 20px;
-}
-@media (max-width: 600px) {
-    .container {
-        flex-direction: column;
-    }
-    aside {
-        width: 100%;
-    }
-    nav a {
-        display: inline-block;
-        margin: 5px;
-    }
-}
-    </style>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
@@ -80,12 +11,23 @@ footer {
         <h1>Nexus Inovação Digital</h1>
     </header>
 <nav>
-        <a href="contate-nos.html">Contato</a>
-        <a href="parceiros.html">Parceiros</a>
-        <a href="portfolio.html">Portfólio</a>
-        <a href="produtos.html">Produtos</a>
-        <a href="serviços.html">Serviços</a>
-        <a href="sobre.html">Sobre</a>
+    <ul>
+        <li><a href="index.html">Início</a></li>
+
+        <li>
+            <a href="produtos.html">Produtos</a>
+            <ul class="submenu">
+                <li><a href="categoria1.html">Categoria 1</a></li>
+                <li><a href="categoria2.html">Categoria 2</a></li>
+                <li><a href="categoria3.html">Categoria 3</a></li>
+            </ul>
+        </li>
+        <li><a href="contate-nos.html">Contato</a></li>
+        <li><a href="parceiros.html">Parceiros</a></li>
+        <li><a href="portfolio.html">Portfólio</a></li>
+        <li><a href="serviços.html">Serviços</a></li>
+        <li><a href="sobre.html">Sobre</a></li>
+    </ul>
 </nav>
 
 <div class="container">
@@ -95,8 +37,37 @@ footer {
     
     </aside>
     <main>
-<h1>Nexus Inovação Digital - Transformando Oportunidades em Tecnologia
-</h1>Na Nexus Inovação Digital, desenvolvemos soluções corporativas inteligentes, eficientes e altamente escaláveis para impulsionar o crescimento sustentável do seu negócio no ambiente digital.<br>Nossa missão é aproximar marcas e clientes por meio de engenharia de software de ponta, design funcional e estratégias focadas em alta performance e segurança de dados.</p>
+<h1>Nexus Inovação Digital - Transformando Oportunidades em Tecnologia</h1>
+<p>
+Na Nexus Inovação Digital, desenvolvemos soluções corporativas inteligentes, eficientes e altamente escaláveis para impulsionar o crescimento sustentável do seu negócio no ambiente digital.
+</p>
+<p>
+Nossa missão é aproximar marcas e clientes por meio de engenharia de software de ponta, design funcional e estratégias focadas em alta performance e segurança de dados.
+</p>
+<h2>Galeria de Imagens</h2>
+<div class="galeria">
+    <a href="#img1" id="imagem1">
+        <img src="1046524032158066598.jpeg" alt="Imagem 1">
+    </a>
+    <a href="#img2" id="imagem2">
+        <img src="904871750142709788.jpeg" alt="Imagem 2">
+    </a>
+    <a href="#img3" id="imagem3">
+        <img src="904871750142709766.jpeg" alt="Imagem 3">
+    </a>
+    <a href="#img4" id="imagem4">
+        <img src="901775525383014739.jpeg" alt="Imagem 4">
+    </a>
+    <a href="#img5" id="imagem5">
+        <img src="891501688757817835.jpeg" alt="Imagem 5">
+    </a>
+    <a href="#img6" id="imagem6">
+        <img src="malevola meio chocada.jpeg" alt="Imagem 6">
+    </a>
+    <a href="#img7" id="imagem7">
+        <img src="907827237402109078.jpeg" alt="Imagem 7">
+    </a>
+</div>
     </main>
 </div>
         <p>&copy; 2026 Nexus Inovação Digital. Todos os direitos reservados.</p>
