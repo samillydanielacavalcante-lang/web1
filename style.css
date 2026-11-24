@@ -1,0 +1,149 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    color: #333;
+}
+
+header {
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 25px;
+}
+
+/* MENU */
+nav {
+  background-color: #444;
+    padding: 10px;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav > ul {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+nav li {
+    position: relative;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    display: block;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #00bcd4;
+}
+
+/* MENU DROP-DOWN */
+.submenu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #444;
+    min-width: 150px;
+    z-index: 10;
+}
+
+nav li:hover .submenu {
+    display: block;
+}
+
+/* CONTAINER */
+.container {
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+    min-height: 400px;
+}
+
+/* ASIDE FIXO */
+aside {
+    position: fixed;
+    left: 20px;
+    top: 200px;
+
+    width: 23%;
+    background-color: #ddd;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+/* CONTEÚDO PRINCIPAL */
+main {
+    flex: 1;
+    margin-left: 27%;
+    background-color: antiquewhite;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+/* GALERIA */
+.galeria {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.galeria a {
+    display: block;
+}
+
+.galeria img {
+    width: 150px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* ESCONDER IMAGEM CLICADA */
+.galeria a:target {
+    display: none;
+}
+
+/* RODAPÉ */
+footer {
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+/* RESPONSIVIDADE */
+@media (max-width: 600px) {
+    .container {
+        flex-direction: column;
+    }
+
+    aside {
+        position: static;
+        width: 100%;
+    }
+
+    main {
+        margin-left: 0;
+    }
+
+    nav > ul {
+        flex-wrap: wrap;
+    }
+}
